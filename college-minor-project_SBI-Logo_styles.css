@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(17, 32, 107);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-text
+{
+    font-size: 2rem;
+}
+
+.submit-details
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Minor-Project
+{
+    margin: 2%;
+    font-size: 1.4rem;
+    transform: scaleY(1.6);
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+.project-topic
+{
+    margin: 60% 0;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_mark {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: rgb(31, 172, 237);
+    position: relative;
+}
+
+.logo_mark::before,
+.logo_mark::after {
+    content: '';
+    position: absolute;
+    background: rgb(17, 32, 107);
+}
+
+.logo_mark::before {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.logo_mark::after {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 50px;
+}
+
+@media (min-width:320px)
+{
+    /* html
+    {
+        max-width: 100%;
+    }
+     */
+    .Minor-Project
+    {
+        margin: 5%;
+        font-size: 1.4rem;
+        transform: scaleY(1.6);
+    }
+
+    .submit-details
+    {
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+
+    .submit-details > article
+    {
+        margin: 5%;
+    }
+}
