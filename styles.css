@@ -5,8 +5,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: rgb(17, 32, 107);
-    color: white;
+    background: rgb(228, 236, 182);
+    color: black;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,6 +14,7 @@ header
 {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -28,8 +29,16 @@ header
 
 .submit-details
 {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.submit-details article
+{
+    padding: 1rem;
 }
 
 .Minor-Project
@@ -41,7 +50,9 @@ header
 
 
 h1 {
+    margin-top: 3.5rem;
     font-size: 5rem;
+    color: rgb(241, 229, 213)
 }
 
 .project-topic
@@ -55,13 +66,16 @@ h1 {
 .logo {
     display: flex;
     align-items: center;
+    width: 400px;
+    height: 120px;
+    background-color: rgb(43, 67, 141);
 }
 
 .logo_mark {
-    margin-right: 20px;
+    margin: 0 3rem;
     width: 100px;
     height: 100px;
-    border-radius: 50px;
+    border-radius: 50%;
     background: rgb(31, 172, 237);
     position: relative;
 }
@@ -74,45 +88,24 @@ h1 {
 }
 
 .logo_mark::before {
-    width: 40px;
+    content: "";
     height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: rgb(17, 32, 107);
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 20px;
 }
 
 .logo_mark::after {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 50px;
-}
-
-@media (min-width:320px)
-{
-    /* html
-    {
-        max-width: 100%;
-    }
-     */
-    .Minor-Project
-    {
-        margin: 5%;
-        font-size: 1.4rem;
-        transform: scaleY(1.6);
-    }
-
-    .submit-details
-    {
-        flex-wrap: wrap;
-        width: 100%;
-        
-    }
-
-    .submit-details > article
-    {
-        margin: 5%;
-    }
+    content: "";
+    width: 16px;
+    height: 51px;
+    border-radius: 20px;
+    background: rgb(17, 32, 107);
+    position: absolute;
+    top: 50px;
+    left: 42px;
 }
